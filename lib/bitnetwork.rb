@@ -1,5 +1,7 @@
-require "bitnetwork/version"
+require 'bitnetwork/version'
 
 module Bitnetwork
-  # Your code goes here...
+
+  autoload :Node, 'bitnetwork/node'
+
 end

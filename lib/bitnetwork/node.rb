@@ -4,13 +4,14 @@ module Bitnetwork
 
   class Node
 
-
     attr_reader :addr_info
 
+    def initialize(data)
+      @addr_info = Addrinfo.new(data[3], data[0], data[5], data[6])
+    end
 
-    def initialize(node_name)
-      @node_name = node_name
-      puts Socket.getaddrinfo(node_name, nil, Socket::Constants::AF_INET)
+    def addr
+      addr_info.ip_address
     end
 
   end

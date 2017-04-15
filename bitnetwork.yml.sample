@@ -1,0 +1,8 @@
+bitnetwork:
+  dns_seeds:
+    - seed.bitcoin.sipa.be
+    - dnsseed.bluematt.me
+    - dnsseed.bitcoin.dashjr.org
+    - seed.bitcoinstats.com
+    - seed.bitcoin.jonasschnelli.ch
+  network: mainnet
